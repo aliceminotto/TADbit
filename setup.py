@@ -72,9 +72,7 @@ for mname, msg, ex in PYTHON_DEPENDENCIES:
         else:
             print ("\n  However, you can still install Tadbit and " +
                    "try to fix it afterwards.")
-            if ask( "  -> Do you want to continue with the installation?",
-                    ["y", "n"]) == "n":
-                exit()
+            
 
 if missing:
     exit("Essential dependencies missing, please review and install.\n")
